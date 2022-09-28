@@ -13,7 +13,7 @@ before_script:
 
 script:
   - docker --version
-  -     docker build -t tranminhquan027/udagram-api-user .
+  - docker build -t tranminhquan027/udagram-api-user .
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
